@@ -7,11 +7,11 @@ namespace BridgeAlexaAzureBot.Infrastructure
 {
     public class PhraseService : IPhraseService
     {
-        private readonly DirectLineClientAPIService directLineClientAPIService;
+        private readonly DirectLineClientService directLineClientService;
 
         public PhraseService()
         {
-            directLineClientAPIService = new DirectLineClientAPIService();
+            directLineClientService = new DirectLineClientService();
         }
 
         public async Task<PhraseServiceModel> GetPhrase(string message)
@@ -19,11 +19,11 @@ namespace BridgeAlexaAzureBot.Infrastructure
     
             PhraseServiceModel phraseResponse =  new PhraseServiceModel { Content = string.Empty };
 
-            StartConversationResponse conversationStart = await directLineClientAPIService.StartConversationAsync();
+            StartConversationResponse conversationStart = await directLineClientService.StartConversationAsync();
 
-            await directLineClientAPIService.SendMessageAsync(conversationStart.ConversationId, message);
+            await directLineClientService.SendMessageAsync(conversationStart.ConversationId, message);
 
-            ConversationMessages conversationMessages = await directLineClientAPIService.GetMessagesAsync(conversationStart.ConversationId, "");
+            ConversationMessages conversationMessages = await directLineClientService.GetMessagesAsync(conversationStart.ConversationId, "");
 
             foreach (Message messageFromBot in conversationMessages.Messages)
             {
