@@ -1,6 +1,7 @@
 ﻿
 using BridgeAlexaAzureBot.Core;
 using BridgeAlexaAzureBot.Models;
+using System;
 using System.Threading.Tasks;
 
 namespace BridgeAlexaAzureBot.Infrastructure
@@ -19,18 +20,24 @@ namespace BridgeAlexaAzureBot.Infrastructure
     
             PhraseServiceModel phraseResponse =  new PhraseServiceModel { Content = string.Empty };
 
-            StartConversationResponse conversationStart = await directLineClientService.StartConversationAsync();
+            try { 
+                StartConversationResponse conversationStart = await directLineClientService.StartConversationAsync();
 
-            await directLineClientService.SendMessageAsync(conversationStart.ConversationId, message);
+                await directLineClientService.SendMessageAsync(conversationStart.ConversationId, message);
 
-            ConversationMessages conversationMessages = await directLineClientService.GetMessagesAsync(conversationStart.ConversationId, "");
+                ConversationMessages conversationMessages = await  directLineClientService.GetMessagesAsync(conversationStart.ConversationId, "");
 
-            foreach (Message messageFromBot in conversationMessages.Messages)
-            {
-                if (messageFromBot.Text != null)
+                foreach (Message messageFromBot in conversationMessages.Messages)
                 {
-                    phraseResponse.Content = messageFromBot.Text;
+                    if (messageFromBot.Text != null)
+                    {
+                        phraseResponse.Content = messageFromBot.Text;
+                    }
                 }
+            }
+            catch (Exception e)
+            {
+                phraseResponse.Content = "¿No le he entendido, por favor podría repetir la pregunta?";
             }
 
             return phraseResponse;
