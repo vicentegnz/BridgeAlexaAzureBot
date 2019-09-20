@@ -2,6 +2,7 @@
 using BridgeAlexaAzureBot.Core;
 using BridgeAlexaAzureBot.Models;
 using System;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace BridgeAlexaAzureBot.Infrastructure
@@ -15,25 +16,29 @@ namespace BridgeAlexaAzureBot.Infrastructure
             directLineClientService = new DirectLineClientService();
         }
 
-        public async Task<PhraseServiceModel> GetPhrase(string message)
+        public async Task<PhraseServiceModel> GetPhrase(string messageToSent)
         {
     
             PhraseServiceModel phraseResponse =  new PhraseServiceModel { Content = string.Empty };
-
+        
             try { 
                 StartConversationResponse conversationStart = await directLineClientService.StartConversationAsync();
 
-                await directLineClientService.SendMessageAsync(conversationStart.ConversationId, message);
+                await directLineClientService.SendMessageAsync(conversationStart.ConversationId, messageToSent);
 
                 ConversationMessages conversationMessages = await  directLineClientService.GetMessagesAsync(conversationStart.ConversationId, "");
 
+                var content = new StringBuilder();
                 foreach (Message messageFromBot in conversationMessages.Messages)
                 {
-                    if (messageFromBot.Text != null)
+                    if (messageFromBot.Text != null && messageFromBot.Text != messageToSent)
                     {
-                        phraseResponse.Content = messageFromBot.Text;
+                        content.AppendLine(messageFromBot.Text);
                     }
                 }
+
+                phraseResponse.Content = content.ToString();
+
             }
             catch (Exception e)
             {

@@ -46,7 +46,7 @@ namespace BridgeAlexaAzureBot.Infrastructure
 
             using (var httpClient = new HttpClient())
             {
-                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("BotConnector", botSecret);
+                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("BotConnector", botSecret); 
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
                 var response = await httpClient.PostAsync(url, content);

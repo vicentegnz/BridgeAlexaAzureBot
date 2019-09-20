@@ -1,0 +1,82 @@
+{
+	"version": "1.0",
+	"session": {
+		"new": false,
+		"sessionId": "amzn1.echo-api.session.7adf04fe-1413-415c-95b6-ef543539ed6c",
+		"application": {
+			"applicationId": "amzn1.ask.skill.e4409c21-a163-4345-87d4-294115ead0c2"
+		},
+		"user": {
+			"userId": "amzn1.ask.account.AHN3ATSCFSCS5HKQX4N5LPRJ22B4HS3MY4D5YOYMT34PO5BOA6AQNX7LPUNDBPUX7226ENPHJTIYYUFXPOJO2NVVYBMMWPFKMWZPSVVKKE4Z5B74XAZVRYMYHWHII7X2LRATH4E5SC4N6GZDU54LOPG6CWZWAVLNUTSE4GOAYHJUBUU3TZH357GRSLL7K3C77CVD7TCRMEGIGYY"
+		}
+	},
+	"context": {
+		"System": {
+			"application": {
+				"applicationId": "amzn1.ask.skill.e4409c21-a163-4345-87d4-294115ead0c2"
+			},
+			"user": {
+				"userId": "amzn1.ask.account.AHN3ATSCFSCS5HKQX4N5LPRJ22B4HS3MY4D5YOYMT34PO5BOA6AQNX7LPUNDBPUX7226ENPHJTIYYUFXPOJO2NVVYBMMWPFKMWZPSVVKKE4Z5B74XAZVRYMYHWHII7X2LRATH4E5SC4N6GZDU54LOPG6CWZWAVLNUTSE4GOAYHJUBUU3TZH357GRSLL7K3C77CVD7TCRMEGIGYY"
+			},
+			"device": {
+				"deviceId": "amzn1.ask.device.AGT6TXC3MQ6GF6XL6VOJ5ZTIAM6MH32UH6UGK63A2HY3O2A5VRB2A2RUQDBX254TOL7IOBCP4OZR5XSOLXGNVEFWTGNOZ2SRY6ZEM7RQYDOUNWXJRQZZ44IBUQZ2CDJSIL2N4GOFC3VOD6O3P7DNSPXZ5XQKIXE32M5STAQNJCHOFVSICLIO4",
+				"supportedInterfaces": {}
+			},
+			"apiEndpoint": "https://api.eu.amazonalexa.com",
+			"apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLmU0NDA5YzIxLWExNjMtNDM0NS04N2Q0LTI5NDExNWVhZDBjMiIsImV4cCI6MTU2ODQ2ODA2OCwiaWF0IjoxNTY4NDY3NzY4LCJuYmYiOjE1Njg0Njc3NjgsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFCcDY0dXd0SlpXTmdwdTdid3ZWN05hS3dFQUFBQUFBQUN6MzRwUGJNMHFxNjV3M0NaUHVDWG45RjIraVBBS2QvUGRwTDgwRDhTVzEwcDBMK1ZaVGNPWTlhdjlYWnQvc3hJZ0ptN3IyTlNBaUNvSmxCbnhnb3JnVnNEektqZ0M2ZHVJWTZsNWpRNXV0eUxaRVZMOXhiT3o1TkhSZmYrenJOYUZ3aFhvU2RVRHNXVmRmcmxnbzN5dG8ydTdWVEhudHJ6ZXlwMDh1V3ZkRzVrNWRRQ3Y5czFlZ2ttUTNyeHZnMWJrNWFUbFFZQkVOZUdLRzd0SGlLYVZ6YlhkdWRkVW5jeHdOa1lobndFamIySHNFSkZXd1IvVlFNdjJhanBndk40ZWIrNDN6d0xZWXdLc2tqaGFyV0NxYUJNSFJDQ1FoQjVZVVpydmxWWUpSdTYrS3VDYm5TYW53a1oxUVJjbU5BREtmcURFaEZEVThFdG8yb2VxWmVERXdRdEhLV254Q2F6NzMrVmpPSVpBTzZVV0tOY0hXczlSSzY5WkJKbXpGRS9qK3k0bkpaSk8zVkx4ZGc9PSIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFHVDZUWEMzTVE2R0Y2WEw2Vk9KNVpUSUFNNk1IMzJVSDZVR0s2M0EySFkzTzJBNVZSQjJBMlJVUURCWDI1NFRPTDdJT0JDUDRPWlI1WFNPTFhHTlZFRldUR05PWjJTUlk2WkVNN1JRWURPVU5XWEpSUVpaNDRJQlVRWjJDREpTSUwyTjRHT0ZDM1ZPRDZPM1A3RE5TUFhaNVhRS0lYRTMyTTVTVEFRTkpDSE9GVlNJQ0xJTzQiLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BSE4zQVRTQ0ZTQ1M1SEtRWDRONUxQUkoyMkI0SFMzTVk0RDVZT1lNVDM0UE81Qk9BNkFRTlg3TFBVTkRCUFVYNzIyNkVOUEhKVElZWVVGWFBPSk8yTlZWWUJNTVdQRktNV1pQU1ZWS0tFNFo1Qjc0WEFaVlJZTVlIV0hJSTdYMkxSQVRINEU1U0M0TjZHWkRVNTRMT1BHNkNXWldBVkxOVVRTRTRHT0FZSEpVQlVVM1RaSDM1N0dSU0xMN0szQzc3Q1ZEN1RDUk1FR0lHWVkifX0.RT7oElKgJQoEq-PZD-2i3c4985l6tYXsBo1xdkIGP-NfgpYBOH7dulJIlqHRf2xcJaTjIkoAlTI4B_bvGlRf5eV3aWBCRoE9cfyGx7BdqI_J271BKrZLWVGq91wgSOBtJ9h2jjMPLFuG8qskw3pVj4TQqQApqRs5DF7WkgOLBXWk2yGbwPe8eHX9UDqcwQtG5ig4pckCxyYsdQN8EkQb8GjlpKgEext9575sTijI1p4k7ruSOSC17LBhzRs8QpySx2bc0BIvAj9t7kPXI4RYmGC18JIVsSYobrc7k3qVPR9NJpRo63erdinR3eozlol36h-tYjbPn2O1s6eO5H3wOg"
+		},
+		"Viewport": {
+			"experiences": [
+				{
+					"arcMinuteWidth": 246,
+					"arcMinuteHeight": 144,
+					"canRotate": false,
+					"canResize": false
+				}
+			],
+			"shape": "RECTANGLE",
+			"pixelWidth": 1024,
+			"pixelHeight": 600,
+			"dpi": 160,
+			"currentPixelWidth": 1024,
+			"currentPixelHeight": 600,
+			"touch": [
+				"SINGLE"
+			],
+			"video": {
+				"codecs": [
+					"H_264_42",
+					"H_264_41"
+				]
+			}
+		}
+	},
+	"request": {
+		"type": "IntentRequest",
+		"requestId": "amzn1.echo-api.request.adf508c4-e3ee-47fe-9fdf-6c1d8e9d1343",
+		"timestamp": "2019-09-14T13:29:28Z",
+		"locale": "es-ES",
+		"intent": {
+			"name": "GetUserIntent",
+			"confirmationStatus": "NONE",
+			"slots": {
+				"phrase": {
+					"name": "phrase",
+					"value": "como puedo acceder al campus",
+					"resolutions": {
+						"resolutionsPerAuthority": [
+							{
+								"authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.e4409c21-a163-4345-87d4-294115ead0c2.phrase",
+								"status": {
+									"code": "ER_SUCCESS_NO_MATCH"
+								}
+							}
+						]
+					},
+					"confirmationStatus": "NONE",
+					"source": "USER"
+				}
+			}
+		}
+	}
+}
